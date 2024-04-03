@@ -1,0 +1,545 @@
+body{
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-bar{
+    background-color: rgb(24, 24, 103);
+    margin: 0px;
+}
+.nav-bar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;;
+    overflow: hidden;
+    width: 95%
+}
+
+.nav-bar li{
+    font-size: larger;
+    float: left;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    text-align:center;
+    padding: 15px;
+    display: block;
+    padding-top: 60px;
+    font-size: 150%
+}
+
+.nav-bar a:hover{
+    background-color: rgb(29, 29, 122);
+}
+
+.nav-bar img{
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer{
+    background-color: rgb(24, 24, 103);
+    margin: auto;
+    color:white;
+}
+
+.header{
+    background-color: rgb(24, 24, 103);
+    text-align: center;
+    margin-top: -22px;
+    color: white;
+    padding: 50px;
+}
+
+.header p{
+    margin: auto;
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.first-body{
+    background-color: black;
+    width: 75%;
+    margin: auto;
+    overflow: auto;
+    color: white;
+}
+
+
+.first-body img{
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+}
+
+.first-body a{
+    color: white;
+}
+
+.second-body{
+    clear: left;
+    width: 75%;
+    margin: auto;
+    overflow: auto;
+    background-color: rgb(24, 24, 103);
+    color: white;
+}
+
+.second-body a{
+    color: white;
+}
+
+.second-body h2{
+    margin-left: 15px;
+}
+
+.second-body p{
+    margin-left: 15px;
+}
+.second-body img{
+    height: 200px;
+    float: right;
+    margin-left: 15px;
+}
+
+.third-body{
+    clear: right;
+    background-color: rgb(0, 0, 0);
+    width: 75%;
+    margin: auto;
+    overflow: auto;
+    color: white;
+}
+
+.third-body a{
+    color:azure;
+}
+
+.third-body h2{
+    margin-left: 15px;
+}
+
+.third-body p{
+    margin-left: 15px;
+}
+
+.history-main{
+    background-color: rgb(24, 24, 103);
+    color: white;
+    margin: auto;
+    width: 75%;
+    margin-top: -22px;
+
+}
+
+.history-main a{
+    color: azure;
+}
+
+.history-main h2{
+    margin-left: 15px;
+}
+
+.history-main p{
+    margin-left: 15px;
+}
+
+.history-main img{
+    height: 200px;
+    float: right;
+    margin-left: 15px;
+    border: 2px white solid;   
+}
+
+.history-main div{
+    overflow: auto;
+    margin-top: 50px;
+}
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .collapsible:hover{
+    background-color: #ccc;
+  }
+
+  .ncaa-winners-table {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    color: #444;
+    border: 2px #444 solid;
+    margin: auto;
+  }
+
+  tr:nth-child(even){
+    background-color:#ccc;
+  }
+
+  table, th, td {
+    border: 1px #444 solid;
+    padding: 5px;
+  }
+
+/* bracket page */
+
+section {
+    margin: 0 8px;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+  }
+  
+  .header-text {
+      color: white;
+      background: linear-gradient(blue, navy);
+      border: double 5px white;
+      border-radius: 1em;
+      text-align: center;
+      padding: 5px 0;
+  }
+  .header-text h1, .header-text h6 {
+      margin: 0;
+  }
+  .header-text h1 {
+      font-size: 1.5em;
+  }
+  
+  .half-circle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .bottom-circle {
+    margin-top: -5px;
+    transform: rotate(180deg);
+  }
+  .top-circle {
+    margin-bottom: -5px;
+  }
+  .half-circle {
+      height: 50px; /* Alter here for height of circle segment */
+      overflow: hidden;
+  }
+  .half-circle > div {
+      width:400px; /* Alter here for circle diameter */
+      height:400px; /* Alter here for circle diameter */
+      border: 5px double white;
+      border-radius: 50%;
+      background: navy;
+  }
+  
+  .tournament {
+      display: flex;
+      flex-direction: row;
+  }
+  .tournament .round {
+    font-size: .75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+  }
+  .tournament .round .spacer {
+    flex-grow: 2;
+  }
+  .tournament .round .spacer:first-child,
+  .tournament .round .spacer:last-child {
+    flex-grow: 1;
+  }
+  
+  .first-four {
+    border: 1px solid #888;
+    border-radius: 1em;
+    background-color: lightcyan;
+    padding: 0 1em;
+  }
+  .tournament-header {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1em;
+    border: 1px solid black;
+    background-color: rgb(24, 24, 103);
+    color: white;
+  }
+  
+  .first-four-winner li.game-left,
+  .round-1 li.game-left,
+  .round-2 li.game-left,
+  .round-3 li.game-left,
+  .round-4 li.game-left,
+  .semi-final li.game-left {
+      padding-left: 0.5em;
+  }
+  
+  .first-four-winner li.game-right,
+  .round-1 li.game-right,
+  .round-2 li.game-right,
+  .round-3 li.game-right,
+  .round-4 li.game-right,
+  .semi-final li.game-right {
+      padding-right: 0.5em;
+  }
+  
+  .region {
+      font-size: 1.5em;
+      font-weight:bold;
+  }
+  .region-right {
+      text-align:right;
+    padding-right: 5px;
+  }
+  .region-left {
+      text-align:left;
+    padding-left: 5px;
+  }
+  
+  ul.seed li.game-left span:first-child,
+  ul.seed li.game-right span:last-child {
+      font-size: 0.5em;
+  }
+  
+  li.game-right {
+    text-align: right;
+    border-left: 1px solid #aaa;
+  }
+  li.game-left {
+      border-right: 1px solid #aaa;
+  }
+  li.game-bottom {
+    border-bottom: 1px solid #aaa;
+  }
+  li.game-top {
+    border: none;
+    border-bottom: 1px solid #aaa;
+  }
+  li.game-left.spacer {
+      border-right: 1px solid #aaa;
+      min-height: 5px;
+      padding-right:.25em;
+  }
+  li.game-right.spacer {
+      border-left: 1px solid #aaa;
+      min-height: 5px;
+      padding-left:.25em;
+      text-align: left;
+  }
+  
+  .final {
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      border: 1px solid #aaa;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-weight:bold;
+  }
+  .finals .centered {
+      text-align:center;
+      font-weight:bold;
+  }
+  .finals .centered > input {
+      display:block;
+      width:4em;
+      margin: 0 auto 0 auto;
+      text-align:center;
+  }
+  
+  .body-first-child {
+    margin-top: -45px;
+  }
+  .extra-padding {
+    padding-top: 45px;
+  }
+
+  /* about page */
+  .text-about{
+    margin: auto;
+    width: 75%;
+
+  }
+.text-about p {
+    border: 4px solid rgb(24, 24, 103);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.text-about ul{
+    border: 4px solid rgb(24, 24, 103);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+  .text-about img{
+    height: 200px;
+    float: right;
+    overflow: auto;
+    margin-left: 15px;
+  }
+
+  .text-about h2{
+    background-color: rgb(24, 24, 103);
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+  }
+
+  /* schedule page */
+
+  .box-schedule {
+    width: 75%;
+    margin: auto;
+    background-color: rgb(234, 234, 234);
+    border: 4px solid rgb(24, 24, 103);
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .text-schedule h2{
+    background-color: rgb(24, 24, 103);
+    color: white;
+    border: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 50px;
+  }
+  
+  .box-schedule p{
+    size: 5px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    padding: 5px;
+  }
+  .box-schedule h3{
+    margin-bottom: 0px;
+
+  }
+
+  .schedule-box{
+    display: flex;
+  }
+
+  .schedule-box img{
+    height: 25px;
+  }
+
+  /* email page */
+  .form{
+    text-align: center;
+    background-color: #eee;
+    display: flex;
+    width: 50%;
+    margin: auto;
+  }
+
+  .header img{
+    height: 200px;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  input[type=reset] {
+    background-color: #aa0404;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.form-subject p{
+    margin-left: 50px;
+}
+
+.form-subject{
+    width: 50%;
+    margin-left: 200px;
+}
+
+/* randomizer page */
+.text-randomizer{
+    margin: auto;
+    margin-top: 15px;
+    width: 75%;
+    border: 4px solid rgb(24, 24, 103);
+    border-radius: 10px;
+}
+.text-randomizer li{
+    padding: 5px;
+}
+
+.text-randomizer a:visited{
+color: rgb(24, 24, 103);
+}
+
+/* statistics page */
+
+.first-stats{
+    margin: auto;
+    width: 75%;
+    margin-top: 15px;
+}
+
+.first-stats h2{
+    background-color: rgb(24, 24, 103);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.first-stats p,li{
+    padding: 5px;
+}

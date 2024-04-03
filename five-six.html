@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>March Madness Team Randomizer Five/Six Seeds</title>
+        <link rel= "stylesheet" href="field.css">
+        <style>
+            *{
+	            box-sizing:border-box;
+            }
+
+            .body-random{
+                margin:0;
+                padding:0;
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                height:100vh;
+                overflow:hidden;
+            }
+
+            .container{
+                width:500px;
+                height:500px;
+                background-color: #ccc;
+                border-radius:50%;
+                border:15px solid #dde;
+                position: relative;
+                overflow: hidden;
+                transition: 5s;
+            }
+
+            .container div{
+                height:50%;
+                width:200px;
+                position: absolute;
+                clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+                transform:translateX(-50%);
+                transform-origin:bottom;
+                text-align:center;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                font-size:10px;
+                font-weight:bold;
+                font-family:sans-serif;
+                color:#fff;
+                left:135px;
+            }
+
+            .container .one{
+                background-color: #1d244e;
+                left:50%;
+            }
+            .container .two{
+                background-color: #711717;
+                transform: rotate(45deg);
+            }
+            .container .three{
+                background-color: #ff0000;
+                transform:rotate(90deg);
+            }
+            .container .four{
+                background-color: #000000;
+                transform: rotate(135deg);
+                color: white;
+            }
+            .container .five{
+                background-color: #ff6f00;
+                transform: rotate(180deg);
+            }
+            .container .six{
+                background-color: #ff3131;
+                transform: rotate(225deg);
+            }
+            .container .seven{
+                background-color: #000000;
+                transform: rotate(270deg);
+                color: white;
+            }
+            .container .eight{
+                background-color: #f44336;
+                transform: rotate(315deg);
+            }
+
+            .arrow{
+                position: absolute;
+                top:22%;
+                left:50%;
+                transform: translateX(-50%);
+                color:black;
+            }
+
+            .arrow::before{
+                content:"\1F817";
+                font-size:50px;
+            }
+
+            #spin{
+                position: absolute;
+                top:74%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                z-index:10;
+                background-color: #e2e2e2;
+                text-transform: uppercase;
+                border:8px solid #fff;
+                font-weight:bold;
+                font-size:20px;
+                color:#a2a2a2;
+                width: 80px;
+                height:80px;
+                font-family: sans-serif;
+                border-radius:50%;
+                cursor: pointer;
+                outline:none;
+                letter-spacing: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "nav-bar">
+            <ul>
+                <li><figure><img src = "images/bball.gif"></figure></li>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "history.html">History</a></li>
+                <li><a href = "bracket.html">Bracket</a></li>
+                <li><a href = "tournament.html">About</a></li>
+                <li><a href= "schedule.html">Schedule</a></li>
+                <li><a href = "stats.html">Statistics</a></li>
+                <li><a href = "email.html">Create Account</a></li>
+            </ul>
+        </div>
+        <div class = "body-random">
+        <button id="spin">Spin</button>
+	        <span class="arrow"></span>
+        <div class="container">
+            <div class="one">BYU</div>
+            <div class="two">South Carolina</div>
+            <div class="three">Gonzaga</div>
+            <div class="four">San Diego St.</div>
+            <div class="five">Clemson</div>
+            <div class="six">Wisconsin</div>
+            <div class="seven">Saint Mary's</div>
+            <div class="eight">Texas Tech</div>
+        </div>
+        </div>
+        <div class = "footer">
+            <footer>
+                <p>&copy; Caroline Field 2024</p>
+            </footer>
+        </div>
+        <script>
+            let container = document.querySelector(".container");
+            let btn = document.getElementById("spin");
+            let number = Math.ceil(Math.random() * 1000);
+
+            btn.onclick = function () {
+                container.style.transform = "rotate(" + number + "deg)";
+                number += Math.ceil(Math.random() * 1000);
+            }
+        </script>
+    </body>
+</html>
